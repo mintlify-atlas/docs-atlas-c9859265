@@ -1,0 +1,150 @@
+{
+  "projectType": "saas",
+  "projectName": "SmartHR",
+  "projectDescription": "A comprehensive Human Resources management system for employee management, recruitment, and organizational workflows",
+  "theme": "almond",
+  "primaryColor": "#2563EB",
+  "lightColor": "#60A5FA",
+  "darkColor": "#1E40AF",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/employee-management",
+              "features/recruitment",
+              "features/notifications",
+              "features/document-management",
+              "features/calendar-scheduling"
+            ]
+          },
+          {
+            "group": "User Roles",
+            "pages": [
+              "roles/admin-guide",
+              "roles/employee-guide",
+              "roles/permissions"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/configuration",
+              "deployment/database-setup",
+              "deployment/environment-variables"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/authentication/login",
+              "api/authentication/password-reset"
+            ]
+          },
+          {
+            "group": "User Management",
+            "pages": [
+              "api/users/list-users",
+              "api/users/create-user",
+              "api/users/update-user",
+              "api/users/delete-user",
+              "api/users/import-export"
+            ]
+          },
+          {
+            "group": "Employees",
+            "pages": [
+              "api/employees/list-employees",
+              "api/employees/employee-documents"
+            ]
+          },
+          {
+            "group": "Recruitment",
+            "pages": [
+              "api/recruitment/list-positions",
+              "api/recruitment/create-position",
+              "api/recruitment/manage-applicants",
+              "api/recruitment/applicant-progress"
+            ]
+          },
+          {
+            "group": "Notifications",
+            "pages": [
+              "api/notifications/list-notifications",
+              "api/notifications/create-notification",
+              "api/notifications/delete-notification"
+            ]
+          },
+          {
+            "group": "Documents",
+            "pages": [
+              "api/documents/upload-document",
+              "api/documents/list-documents",
+              "api/documents/download-document",
+              "api/documents/delete-document"
+            ]
+          },
+          {
+            "group": "Calendar",
+            "pages": [
+              "api/calendar/list-events",
+              "api/calendar/create-event",
+              "api/calendar/delete-event"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Employee management with profiles and documents",
+    "Complete recruitment workflow with applicant tracking",
+    "Internal notification system",
+    "Document management with upload/download",
+    "Calendar integration with Google Calendar",
+    "Role-based access control (Admin/Employee)",
+    "Password recovery and authentication",
+    "CSV import/export for bulk operations"
+  ],
+  "publicApiSurface": [
+    "POST /login",
+    "POST /auth/forgot-password",
+    "POST /auth/reset-password",
+    "GET /api/users",
+    "POST /api/users",
+    "PUT /api/users/:id",
+    "DELETE /api/users/:id",
+    "GET /api/empleados",
+    "POST /api/empleados/:id/documentos",
+    "GET /api/reclutamiento",
+    "POST /api/reclutamiento",
+    "GET /api/reclutamiento/:id/postulantes",
+    "POST /api/reclutamiento/:id/postulantes",
+    "GET /api/notificaciones",
+    "POST /api/notificaciones",
+    "DELETE /api/notificaciones/:id",
+    "GET /api/docs",
+    "POST /api/docs/upload",
+    "GET /api/docs/:id/download",
+    "DELETE /api/docs/:id",
+    "GET /api/eventos",
+    "POST /api/eventos",
+    "DELETE /api/eventos/:id"
+  ]
+}
